@@ -1,3 +1,5 @@
-Package Name: turtle2\n
-keyboard.py contols one turtle from turtlesim\n
+Package Name: turtle2
+
+keyboard.py contols one turtle from turtlesim
+
 keyboard2.py controls another turtle
