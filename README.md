@@ -1,5 +1,7 @@
 Package Name: turtle2
 
-keyboard.py contols one turtle from turtlesim
+Workspace Name: turtle_ws
 
-keyboard2.py controls another turtle
+Python scripts: Each script is responsible for contolling one turtle
+
+Turtle Names: keyboard.py-->turtle1/ keyboard2.py-->turtle2/ kerboard3.py-->turtle3/ keyboard4.py-->turtle4    
