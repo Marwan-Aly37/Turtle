@@ -28,13 +28,13 @@ def key_press():
         cmd = Twist()
 
         if key == 'w':
-            cmd.linear.x = 1.0
+            cmd.linear.x = 1.75
         elif key == 's':
-            cmd.linear.x = -1.0
+            cmd.linear.x = -1.75
         elif key == 'a':
-            cmd.angular.z = 1.0
+            cmd.angular.z = 1.75
         elif key == 'd':
-            cmd.angular.z = -1.0
+            cmd.angular.z = -1.75
         elif key == 'q':
             current_time=time.time()
             if (current_time - last_attack_time >= 3):
