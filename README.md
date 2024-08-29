@@ -23,6 +23,7 @@ window.py--> opens the turtlesim window
 startup.py--> runs control.py, Window.py and node.py simultaneously to reduce the number of commands being typed into the terminal
 
 To run the code go to terminal and type:
+
       roscore
       
       rosrun turtle2 startup.py   #runs the game and shoud ask you for number of players as input and spawns turtles accordingly
