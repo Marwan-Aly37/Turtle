@@ -1,13 +1,26 @@
 #!/usr/bin/env python3
 import subprocess
+import rospy
+from std_msgs.msg import Int32
 def turtles():
+
     num = int(input("Enter number of players: "))
-    try:
-        subprocess.run(['rosservice', 'call','/kill','turtle2'])
-        subprocess.run(['rosservice', 'call','/kill','turtle3'])
-        subprocess.run(['rosservice', 'call','/kill','turtle4'])
-    except:
-        subprocess.run(['rosservice', 'call','/kill','turtle1'])
+
+    rospy.init_node("number_of_players_node")
+    pub = rospy.Publisher("players_topic", Int32, queue_size=10)
+    rate = rospy.Rate(1)
+    rospy.sleep(1)
+    for i in range (5):
+        pub.publish(num)
+        rospy.sleep
+    
+
+    #try:
+    #    subprocess.run(['rosservice', 'call','/kill','turtle2'])
+    #    subprocess.run(['rosservice', 'call','/kill','turtle3'])
+    #    subprocess.run(['rosservice', 'call','/kill','turtle4'])
+    #except:
+        #subprocess.run(['rosservice', 'call','/kill','turtle1'])
     subprocess.run(['rosservice', 'call','/kill','turtle1'])
     if (num == 1):
         subprocess.run(['rosservice','call','/spawn','5.5','5.5','0.0','turtle1'])
