@@ -24,9 +24,15 @@ startup.py--> runs control.py, Window.py and node.py simultaneously to reduce th
 
 To run the code go to terminal and type:
       roscore
+      
       rosrun turtle2 startup.py   #runs the game and shoud ask you for number of players as input and spawns turtles accordingly
+      
       rosrun turtle2 keyboard.py  #each computer should run one keyboard script so computer 1 runs keyboard.py, computer 2 runs keyboard2.py and so on
+      
 Your all set after running the keyboard script move the turtle with the WASD keys and attack with q
+
 -q has a countdown after each use to prevent spamming
+
 -each turtle starts with 100 health and each attack does 50 damage so 2 hits and your turtle will despawn
+
 -must install ROS to run
